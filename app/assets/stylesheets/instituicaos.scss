@@ -1,0 +1,95 @@
+body {
+    background-color: #ffffff;
+    font-family: "sans-serif";
+    font-color: #141414;
+    font-weight: 400;
+}
+
+#instituicao{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#instituicao td, #instituicao th {
+    border: 1px solid #ffffff;
+    padding: 4px 7px 3px 7px;
+}
+
+#instituicao th {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #00568b;
+    color: #ffffff;
+}
+
+#instituicao td {
+    background-color: #f7fdfa;
+}
+
+.status{
+    text-align: center;
+}
+
+.up {
+    border-radius: 5px;
+    border: 1px solid #00CC66;
+    background: #CCFFCC;
+    padding: 4px; 
+    width: 10px;
+    height: 5px;
+    display: inline;
+    float: none;
+    font-size: 10px
+}
+
+.down {
+    border-radius: 5px;
+    border: 1px solid #E60000;
+    background: #FF9999;
+    padding: 4px;
+    width: 10px;
+    height: 5px;
+    display: inline;
+    float: none;
+    font-size: 10px
+}
+
+.na {
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background: #EFEFEF;
+    padding: 3px;
+    width: 10px;
+    height: 5px;
+    display: inline;
+    float: none;
+    font-size: 10px
+}
+
+.name {
+    display: inline;
+    float: left;
+    overflow: auto;
+}
+
+.notavaiable {
+    border-radius: 5px;
+    border: 1px solid #E60000;
+    background: #FF9999;
+    padding: 3px;
+    display: inline;
+    float: right;
+    font-size: 10px
+}
+
+.avaiable {
+    border-radius: 5px;
+    border: 1px solid #00CC66;
+    background: #CCFFCC;
+    padding: 3px;
+    display: inline;
+    float: right;
+    font-size: 10px
+}
+

@@ -1,0 +1,34 @@
+<table id="instituicao">
+  <tr>
+   <th> Instituição </th>
+   <th> dom0 </th>
+   <th> OCF </th>
+   <th> OMF </th>
+   <th> LDAP </th>
+   <th> Flowvisor </th>
+   <th> DNS </th>
+   <th> VPN </th>
+   <th> ToR </th>
+   <th> netFPGA1 </th>
+   <th> netFPGA2 </th>
+   <th> netFPGA3 </th>
+   <th> Pronto </th>
+  </tr>
+
+  <% @instituicao.sort.map do |s| %>
+    <tr>
+	<% if s.at(1).at(1).eql? "available" %>
+      		<td><div class="name"><%= s.at(0) %></div> <div class="avaiable"><%=s.at(1).at(1) %></div></td>
+	<% else %>
+		<td><div class="name"><%= s.at(0) %></div> <div class="notavaiable"><%=s.at(1).at(1) %></div></td>
+	<% end %>
+      <% s.at(1).at(0).map do |x| %>
+      <% if x.eql? "na" %>
+      <td class="status"> <div class="<%= x %>">-</div></td>
+      <% else %>
+      <td class="status"><div class="<%= x %>"><%= x %></div></td>
+      <% end %>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
